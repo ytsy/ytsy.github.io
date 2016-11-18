@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-    <meta charset="UTF-8">
-    <title>hello world!</title>
-</head>
-<body>
-    <h1>welcome to my blog!</h1>
-</body>
-</html>
+---
+layout: default
+title: TANYOU'S INDEX PAGE
+---
+<h1>博文列表</h1>
+<ul>
+    <% for post in site.posts %>
+        <li>
+            {{post.date|date_to_string}}<a href="{{post.url}}">{{post.title}}</a>
+        </li>
+    <% endfor%>
+</ul>
+
