@@ -1,13 +1,16 @@
 ---
-layout: default
-title: TANYOU'S INDEX PAGE
+layout : default
+title : "T's blog"
 ---
-<h1>博文列表</h1>
-<ul>
-    <% for post in site.posts %>
-        <li>
-            <a href="{{post.url}}">{{post.title}}</a>
-        </li>
-    <% endfor %>
-</ul>
-
+<div class="wrapper">
+    {% include header.html %}
+    <article>
+        {% include basicInformation.html %}
+        {% include education.html %}
+        {% include skill.html %}
+        {% include experience.html %}
+        {% include awards.html %}
+        {% include otherExperience.html %}
+    </article>
+    {% include footer.html %}
+</div>
