@@ -60,6 +60,10 @@ main{
     width:100%;
     height:auto;
 }
+.basicInfo .headPhoto{
+    width:100px;
+    float:right;
+}
 section:first-child{
     margin-top:50px;
 }
@@ -80,11 +84,17 @@ section:first-child{
     background-color: deepskyblue;
 }
 .detailIntro{
-    width:80%;
-    padding:20px 0 20px 20%;
+     width:80%;
+     padding:20px 0 20px 20%;
+ }
+.detailIntro:after{
+    content:"";
+    display:block;
+    clear:both;
 }
 .detailIntro .content{
-    width:80%;
+    width:70%;
+    float:left;
 }
 .detailIntro .content p{
     font-size: 2rem;
@@ -128,7 +138,7 @@ section:first-child{
     width:45%;
     height:auto;
 }
-.boxContent img{
+.boxContent img,.basicInfo img{
     width:100%;
     height:auto;
 }
